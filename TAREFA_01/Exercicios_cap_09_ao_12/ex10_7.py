@@ -1,0 +1,16 @@
+def has_duplicates(t):
+   for i in range(1, len(t)):
+      if t[i-1] in t[i:]:
+         return True
+         
+      
+   return False
+   
+
+l1 = [1, 2, 3, 4, 2]
+l2 = ['a', 'c', 'a', 'j']
+l3 = [3, 5, 1, 6, 7]
+
+print(has_duplicates(l1))
+print(has_duplicates(l2))
+print(has_duplicates(l3))
